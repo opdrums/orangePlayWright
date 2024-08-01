@@ -3,5 +3,5 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-EMAIL_USER=operez6921@gmail.com
-EMAIL_PASS=Picap_1234
+/allure-report/
+/allure-results/
