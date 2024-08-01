@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Jul 31 16:42:07 COT 2024","Wed Jul 31 16:42:26 COT 2024","19014","chromium","orangeTests/login.spec.ts","Orange pages","","","Login success",""
-"passed","Wed Jul 31 16:42:21 COT 2024","Wed Jul 31 16:42:32 COT 2024","11530","firefox","orangeTests/login.spec.ts","Orange pages","","","Login success",""
-"passed","Wed Jul 31 16:42:07 COT 2024","Wed Jul 31 16:42:20 COT 2024","12402","chromium","orangeTests/login.spec.ts","Orange pages","","","Login success1",""
-"passed","Wed Jul 31 16:42:27 COT 2024","Wed Jul 31 16:42:38 COT 2024","11124","firefox","orangeTests/login.spec.ts","Orange pages","","","Login success1",""
