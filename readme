@@ -1,0 +1,21 @@
+documentacion: 
+
+Como instalar un proyecto en playwright:
+    *crear una carpeta
+    *npm init playwright@latest
+
+Correr en la terminal el proyecto:
+    *npx playwright test -- ejecuta todas las pruebas en todos los navegadores
+    *npx playwright show-report --reporte en html
+    *npx playwright test --ui --ejecuta las pruebas mas amigables
+    *npx playwright test --debug --depurar todas las pruebas
+    *npx playwright codegen url --grabar
+    *npx playwright test  url --ui
+    npx playwright test o url --trace on
+
+reporte allure:
+    *npm i allure-playwright
+    *npx playwright test
+    *npx allure serve allure-results
+    *npm test
+
