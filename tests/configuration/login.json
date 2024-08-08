@@ -1,6 +1,9 @@
 {
     "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
     "userName": "Admin",
-    "password": "admin123"
+    "password": "admin123",
+    "employee": "test",
+    "userN": "qa test2",
+    "userPassword": "Qa_12345678"
 }
   
