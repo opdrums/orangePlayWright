@@ -1,0 +1,20 @@
+{
+    "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "userName": "Admin",
+    "password": "admin123",
+    "firstName": "qa ",
+    "middleName":"test ",
+    "lastName":"1",
+    "user": "test4",
+    "userPassword": "Qa_12345678", 
+    "otherID": "1", 
+    "driverLicense": "123123123122", 
+    "date": "1995-02-08",
+    "dateExpire": "2022-24-08",
+    "testFIeld": "234234",
+    "filePath": "/home/omarperez/Escritorio/Captura de pantalla_20240628_222530.png",
+    "commentFile": "hola mundo",
+    "nationality": "Angolan",
+    "statePerson": "Single",
+    "typeBlood": "A+"
+}

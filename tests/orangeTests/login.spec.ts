@@ -25,7 +25,7 @@ test.describe('Orange pages', () => {
     })
 
     await test.step('validate img orange', async () => {
-      await web.locatorVIsible('img[alt="client brand banner"]')
+      await web.expectPage.locatorVIsible('img[alt="client brand banner"]')
       await context.clearCookies()
     })
   });
@@ -37,23 +37,23 @@ test.describe('Orange pages', () => {
     })
 
     await test.step('validate logout user', async () => {
-      await web.clickLocator('.oxd-userdropdown-img')
-      await web.clickLocator('//a[normalize-space()="Logout"]')
-      await web.validateTextFirst('Login')
+      await web.clickPage.clickLocator('.oxd-userdropdown-img')
+      await web.clickPage.clickLocator('//a[normalize-space()="Logout"]')
+      await web.expectPage.validateTextFirst('Login')
       await context.clearCookies()
     })
   });
 
   test('user forgot password', async ({context}) =>{
     await test.step('click botton forgot password', async () => {
-      await web.clickLocator('//p[@class="oxd-text oxd-text--p orangehrm-login-forgot-header"]')
-      await web.fillText('input[placeholder="Username"]',  config.userName)
-      await web.validateTextFirst("Reset Password")
-      await web.clickLocator('button[type="submit"]');
+      await web.clickPage.clickLocator('//p[@class="oxd-text oxd-text--p orangehrm-login-forgot-header"]')
+      await web.fillPage.fillText('input[placeholder="Username"]',  config.userName)
+      await web.expectPage.validateTextFirst("Reset Password")
+      await web.clickPage.clickLocator('button[type="submit"]');
     })
     
     await test.step('validate alert succes forgot password', async () => {
-      await web.locatorVIsible(".oxd-text.oxd-text--h6.orangehrm-forgot-password-title")
+      await web.expectPage.locatorVIsible(".oxd-text.oxd-text--h6.orangehrm-forgot-password-title")
       await context.clearCookies()
     })
   })
