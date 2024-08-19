@@ -8,16 +8,16 @@ export class expectPage {
     }
 
     async validateTextFirst(locator){
-        await expect(this.page.getByText(locator).first()).toBeVisible();    
+        await expect.soft(this.page.getByText(locator).first()).toBeVisible();    
     }
 
 
     async fillToBeContaintText(locator, text){
-        await expect(this.page.locator(locator)).toHaveText(locator);
+        await expect.soft(this.page.locator(locator)).toHaveText(locator);
     }
 
     async locatorVIsible(locator){
-        await expect(this.page.locator(locator)).toBeVisible();
+        await expect.soft(this.page.locator(locator)).toBeVisible();
     }
 
 }

@@ -4,7 +4,6 @@ import { webBasePage } from '../pagesObject/webBasePage';
 import * as fs from 'fs';
 
 let takeScreen = false;
-let screenshotPage: ScreenshotPage;
 let web: webBasePage;
 
 const path = require('path');
@@ -13,7 +12,6 @@ const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 test.beforeEach(async ({ page}) => {
   web = new webBasePage (page);
-  screenshotPage = new ScreenshotPage(page, takeScreen);
   await web.openUrl(config.url);
 });
 

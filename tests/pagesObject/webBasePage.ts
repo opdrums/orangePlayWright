@@ -2,20 +2,23 @@ import { Page, expect } from "@playwright/test";
 import { clickPage } from "../pagesObject/clickPage";
 import { fillPage } from "./fillPage";
 import { expectPage } from "./expectPage";
+import { ScreenshotPage } from "./ScreenshotPage";
 
 
 export class webBasePage{ 
-    readonly page: Page;
-    public clickPage: clickPage;
-    public fillPage: fillPage;
-    public expectPage: expectPage;
+    readonly page: Page
+    clickPage: clickPage
+    fillPage: fillPage
+    expectPage: expectPage
+    screenshot: ScreenshotPage
 
 
     constructor(page:Page){
-        this.page = page;
+        this.page = page
         this.clickPage = new clickPage(this.page)
         this.fillPage = new fillPage(this.page)
         this.expectPage = new expectPage(this.page)
+        this.screenshot = new ScreenshotPage(this.page)
     }
 
     async waitTime(time){
